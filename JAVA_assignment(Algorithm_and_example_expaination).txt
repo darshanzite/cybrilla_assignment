@@ -1,0 +1,34 @@
+* Algorithm - 
+ Let n = number of buildings, 
+     m= number of floor for each building.
+
+Formula : Ai = Mi-Mj = Lowest difference of floors than other pairing's difference of floors. where i = 1 to n.
+ 
+Step 1 : set counter for jump for first building to 0(no other buiding). Goto step 2
+
+Step 2 : Take lowest floor difference so that to jump from i numbers of buidings.  Goto step 3.
+
+Step 3 : increase the the number of floor require to match i numbers of buidings until i is not equal to n else goto step 5. Calculate total number of increased floors needed to match i buildings height. Add the result in an array. Goto step 4.
+ 
+Step 4 : increment i, and repeat step 2.
+
+Step 5 : XOR all the results i.e. XOR of Ai  
+         That is total number of floors require to jump from all the buildings. 
+	 
+Step 6 : STOP
+
+
+* For the given example, calculation steps will be i.e. input {1, 5, 4, 3, 8}
+- 
+1. For first iteration he need 0 floor i.e. no floor. Total = 0 floor 
+2. For second iteration he needs to add 1 floor to #4 to equal with #5
+	now height if the buildings are {1, 5, 4(+1), 3, 8}. Total = 1 floor
+3. For third iteration he needs 3 floors to increase.
+	now height if the buildings are {1, 5, 4(+1), 3(+2), 8}. Total = 3 floors
+4. For fourth iteration he needs 7 floors to increase.
+	now height if the buildings are {1(+4), 5, 4(+1), 3(+2), 8} = Total = 7 floors.
+5. For fourth iteration he needs 7 floors to increase. 
+	now height if the buildings are {1(+7), 5(+3), 4(+4), 3(+5), 8}
+	= Total = 7 floors.	
+	Now totals are 0, 1, 3 , 7, 19 
+	0 XOR 1 XOR 3 XOR 7 XOR 19 = 22

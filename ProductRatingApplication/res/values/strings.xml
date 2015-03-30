@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rate Product</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ok">OK</string>
+    <string name="google_button">Google button</string>
+    <string name="view_result">View Result</string>
+    <string name="sign_in_with">SIGN IN WITH</string>
+    <string name="products">PRODUCTS</string>
+    <string name="rate_the_products">Rate the Products</string>
+    <string name="rate_a_product">RATE A PRODUCT</string>
+    <string name="add_a_comment">Add a Comment</string>
+    <string name="submit">SUBMIT</string>
+    <string name="view_results">View Results</string>
+    <string name="rating_submitted_success">Rating submitted successfully</string>
+    
+    <string name="product_wise_result">PRODUCT WISE RESULT</string>
+	<string name="mtd">MTD</string>
+	<string name="ytd">YTD</string>
+	<string name="loading">Loading...</string>
+</resources>
